@@ -11,6 +11,7 @@ const Table = () => {
             <th className='border border-0 border-orange-700 p-2'>DOB</th>
             <th className='border border-0 border-orange-700 p-2'>Class</th>
             <th className='border border-0 border-orange-700 p-2'>Division</th>
+            <th className='border border-0 border-orange-700 p-2'>Gender</th>
           </tr>
         </thead>
         <tbody>
@@ -20,6 +21,7 @@ const Table = () => {
             <td className='border border-0 border-orange-700 p-2'>01/03/2002</td>
             <td className='border border-0 border-orange-700 p-2'>X1</td>
             <td className='border border-0 border-orange-700 p-2'>A</td>
+            <td className='border border-0 border-orange-700 p-2'>Male</td>
           </tr>
           <tr>
             <td className='border border-0 border-orange-700 p-2'>2</td>
@@ -27,6 +29,7 @@ const Table = () => {
             <td className='border border-0 border-orange-700 p-2'>01/03/2002</td>
             <td className='border border-0 border-orange-700 p-2'>X1</td>
             <td className='border border-0 border-orange-700 p-2'>A</td>
+            <td className='border border-0 border-orange-700 p-2'>Female</td>
           </tr>
           <tr>
             <td className='border border-0 border-orange-700 p-2'>3</td>
@@ -34,6 +37,7 @@ const Table = () => {
             <td className='border border-0 border-orange-700 p-2'>01/03/2002</td>
             <td className='border border-0 border-orange-700 p-2'>X1</td>
             <td className='border border-0 border-orange-700 p-2'>A</td>
+            <td className='border border-0 border-orange-700 p-2'>Male</td>
           </tr>
           <tr>
             <td className='border border-0 border-orange-700 p-2'>4</td>
@@ -41,6 +45,7 @@ const Table = () => {
             <td className='border border-0 border-orange-700 p-2'>01/03/2002</td>
             <td className='border border-0 border-orange-700 p-2'>X1</td>
             <td className='border border-0 border-orange-700 p-2'>A</td>
+            <td className='border border-0 border-orange-700 p-2'>Others</td>
           </tr>
         </tbody>
       </table>
