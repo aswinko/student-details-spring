@@ -11,11 +11,12 @@ const Form = () => {
   const [studentInfo, setStudentInfo] = useState()
   const onSubmit = (data) => {
     setStudentInfo(data)
-    console.log(data)
+    // console.log(data)
   }
   console.log(errors)
+  
   return (
-    <div className="form py-6 px-10 m-8 bg-white border border-0 rounded-lg shadow-xl">
+    <div className="form py-6 px-4 md:px-6 xl:px-12 m-4 xl:m-8 bg-white border border-0 rounded-lg shadow-xl">
       <pre>{JSON.stringify(studentInfo, undefined, 2)}</pre>
       <h4 className="text-2xl text-center font-bold mb-6 text-orange-800">
         Student Details
@@ -37,7 +38,7 @@ const Form = () => {
               {...register('name', {
                 required: 'Name is required',
                 pattern: {
-                  value: /^[a-zA-Z\s]*$/i,
+                  value: /^[a-zA-Z\s]*$/,
                   message: 'Allowed only letters and spaces.',
                 },
               })}
@@ -69,9 +70,10 @@ const Form = () => {
               name="class"
               className="w-full bg-slate-100 p-2"
               id="class"
+              defaultValue=""
               {...register('class', { required: 'Class is required.' })}
             >
-              <option disabled selected value>
+              <option disabled value="">
                 Select class
               </option>
               <option value="I">I</option>
@@ -99,9 +101,10 @@ const Form = () => {
               name="division"
               className="w-full bg-slate-100 p-2 "
               id="division"
+              defaultValue=""
               {...register('division', { required: 'Division is required' })}
             >
-              <option disabled hidden selected value>
+              <option disabled hidden value="">
                 Select division
               </option>
               <option value="A">A</option>
@@ -118,43 +121,47 @@ const Form = () => {
               </label>
             </div>
             <div className="flex pl-0">
-              <div className="pr-2">
-                <label htmlFor="male" className="pr-2">
-                  Male
-                </label>
+
+              <div className="pr-3 flex items-center">
                 <input
                   type="radio"
                   id="male"
                   name="gender"
                   value="male"
+                  className='w-4 h-4'
                   {...register('gender', { required: 'Gender is required' })}
                 />
+                <label htmlFor="male" className="pl-2">
+                  Male
+                </label>
               </div>
 
-              <div className="pr-2">
-                <label htmlFor="female" className="px-2">
-                  Female
-                </label>
+              <div className="pr-3 flex items-center">
                 <input
                   type="radio"
                   id="female"
                   name="gender"
                   value="female"
+                  className='w-4 h-4'
                   {...register('gender', { required: 'Gender is required' })}
                 />
+                <label htmlFor="female" className="px-1">
+                  Female
+                </label>
               </div>
 
-              <div className="pr-2">
-                <label htmlFor="others" className="px-2">
-                  Others
-                </label>
+              <div className="pr-3 flex items-center">
                 <input
                   type="radio"
                   id="others"
                   name="gender"
                   value="others"
+                  className='w-4 h-4'
                   {...register('gender', { required: 'Gender is required' })}
                 />
+                <label htmlFor="others" className="px-1">
+                  Others
+                </label>
               </div>
             </div>
               <p className="text-rose-800">{errors.gender?.message}</p>
