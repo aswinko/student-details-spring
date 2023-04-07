@@ -8,6 +8,7 @@ const Form = () => {
     handleSubmit,
     formState: { errors },
   } = useForm()
+  
   const [studentInfo, setStudentInfo] = useState()
   const onSubmit = (data) => {
     setStudentInfo(data)
