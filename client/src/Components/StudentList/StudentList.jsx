@@ -79,7 +79,7 @@ const StudentList = () => {
         </thead>
         {!loading && (
           <tbody>
-            {students.map((student, index) => (
+            {students?.map((student, index) => (
               <tr key={index}>
                 <td className="border border-0 border-orange-700 p-2">
                   {num++}
