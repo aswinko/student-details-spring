@@ -50,7 +50,10 @@ const StudentList = () => {
   };
 
   return (
-    <div className="bg-white md:px-8 xl:px-12 py-8 m-4 md:m-8 rounded-lg shadow-xl overflow-scroll lg:overflow-hidden">
+    <div className="bg-white md:px-8 xl:px-12 px-2 pt-8 m-4 md:m-8 rounded-lg shadow-xl overflow-scroll lg:overflow-hidden">
+      <h4 className="text-2xl md:text-left text-center font-bold mb-6 text-orange-800">
+          Student Details
+        </h4>
       <table className="border-spacing-2 w-full">
         <thead>
           <tr className="text-left text-sm md:text-md bg-slate-100">

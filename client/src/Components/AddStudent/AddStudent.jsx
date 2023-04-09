@@ -55,7 +55,7 @@ const AddStudent = () => {
       />
       <div className="form py-6 px-4 md:px-6 xl:px-12 m-4 xl:m-8 bg-white border border-0 rounded-lg shadow-xl">
         <h4 className="text-2xl text-center font-bold mb-6 text-orange-800">
-          Student Details
+          Registratin form
         </h4>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="form-group">

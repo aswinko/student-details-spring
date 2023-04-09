@@ -10,7 +10,7 @@ function StudentPage() {
       <div className="left w-full md:w-5/12">
         <AddStudent />
       </div>
-      <div className="right w-full">
+      <div className="right w-full pt-2">
             <StudentList />
       </div>
     </div>
